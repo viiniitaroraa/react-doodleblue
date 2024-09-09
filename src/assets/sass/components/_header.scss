@@ -1,0 +1,113 @@
+// Header Code
+.navbar {
+    .navbar-brand {
+        font-size:24px;
+        font-weight: 300;
+    }
+
+    .navbar-toggler {
+        border: none;
+        margin-right: 10px;
+        padding-bottom: 0;
+       img{
+        width: 26px;
+       }
+    }
+
+    .navbar-collapse {
+        .nav-link {
+            padding: 0 16px;
+            position: relative;
+            text-align: center;
+            display: flex;
+            color: #fff;
+
+            justify-content: center;
+            &.active,
+            &:hover {
+                &:after {
+                    width: 80%;
+
+                }
+            }
+
+            &:after {
+                content: '';
+                background: #fff;
+                position: absolute;
+                height: 4px;
+                border-radius: 0;
+                width: 0;
+
+                bottom: -28px;
+                transition: width .3s;
+            }
+        }
+    }
+
+    .web-menu {
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
+
+        .close-button {
+            display: none;
+        }
+    }
+
+    .mobile-menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        background:#000000e0;
+        width: 100%;
+        z-index: 9;
+        display: flex;
+        align-items: center;
+
+        .navbar-nav {
+            .nav-link {
+                font-size: 40px;
+                margin: 30px 0;
+            }
+        }
+
+        .close-button {
+            position: absolute;
+            right: 16px;
+            top: 16px;
+            background: transparent;
+            border: none;
+
+            img {
+                width: 20px;
+            }
+        }
+    }
+
+    .navbar-text {
+        img {
+            width: 34px;
+        }
+
+        position: relative;
+
+        span {
+            position: absolute;
+            right: -3px;
+            top: 4px;
+            border-radius: 50%;
+            width: 26px;
+            height: 26px;
+            text-align: center;
+            color: #fff;
+            background-color: $secondary-color;
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+}

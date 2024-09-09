@@ -1,0 +1,27 @@
+.btn {
+  text-align: center;
+  -webkit-border-radius: 8px;
+  border-radius: 6px;
+  color: #fff;
+  position: relative;
+  border: 2px solid transparent;
+  border: none;
+  text-align: center;
+  
+  padding: 14px;
+  font-family: $Font-Regular;
+
+  &.btn-primary {
+    color: $white;
+    background: $secondary-color;
+
+    &:hover {
+      opacity: 0.8;
+      background: $secondary-color;
+    }
+  }
+  &.sm{
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
